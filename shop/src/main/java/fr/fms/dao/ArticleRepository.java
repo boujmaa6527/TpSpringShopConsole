@@ -1,11 +1,13 @@
 package fr.fms.dao;
 
+import java.awt.print.Pageable;
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 
 import javax.transaction.Transactional;
 
+import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -24,6 +26,7 @@ public interface ArticleRepository extends JpaRepository<Article, Long>{
 	public List<Article> findByCategoryId(Long categoryId);
 	public List<Article> findAll();
 	public Optional<Article> findById(Long id);
+	//Page <Article> FindAll(); 
 	//public void displayMenu();
 
 	

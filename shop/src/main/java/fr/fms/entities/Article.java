@@ -93,8 +93,7 @@ public class Article implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Article [id=" + id + ", brand=" + brand + ", description=" + description + ", price=" + price
-				+ ", category=" + category + "]";
+		return 	id+ 	"   "	 +brand+ 		" 	"	+description + 		"   " 		+ price+ 		"    "		+category.getName();
 	}
 
 	public void setCategory(Category category) {

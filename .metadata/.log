@@ -1,4 +1,4 @@
-!SESSION 2024-12-12 12:06:46.322 -----------------------------------------------
+!SESSION 2024-12-12 15:44:31.135 -----------------------------------------------
 eclipse.buildId=4.34.0.202411281622
 java.version=21.0.5
 java.vendor=Eclipse Adoptium
@@ -6,608 +6,10 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
 Framework arguments:  -product org.springframework.boot.ide.branding.sts4
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
 
-This is a continuation of log file C:\Users\SahlouneB\Spring Workspace\.metadata\.bak_4.log
-Created Time: 2024-12-12 13:14:20.994
+This is a continuation of log file C:\Users\SahlouneB\Spring Workspace\.metadata\.bak_1.log
+Created Time: 2024-12-12 15:59:57.914
 
-!ENTRY org.eclipse.lsp4e 4 0 2024-12-12 13:14:20.994
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.matches(LSPDocumentAbstractHandler.java:69)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.lambda$0(LSPDocumentAbstractHandler.java:59)
-	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
-	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(AbstractList.java:708)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.anyMatching(LSPDocumentAbstractHandler.java:59)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:123)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:113)
-	at org.eclipse.lsp4e.operations.rename.LSPRenameHandler.setEnabled(LSPRenameHandler.java:71)
-	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:223)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:134)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:91)
-	at org.eclipse.core.commands.Command.setEnabled(Command.java:856)
-	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:932)
-	at org.eclipse.ui.menus.CommandContributionItem.updateMenuItem(CommandContributionItem.java:536)
-	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:486)
-	at org.eclipse.ui.menus.CommandContributionItem.lambda$2(CommandContributionItem.java:325)
-	at org.eclipse.ui.menus.CommandContributionItem.updateCommandProperties(CommandContributionItem.java:329)
-	at org.eclipse.ui.menus.CommandContributionItem.lambda$1(CommandContributionItem.java:296)
-	at org.eclipse.core.commands.Command$1.run(Command.java:529)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.commands.Command.fireCommandChanged(Command.java:522)
-	at org.eclipse.core.commands.Command.lambda$0(Command.java:1000)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.fireHandlerChanged(HandlerServiceHandler.java:189)
-	at org.eclipse.core.commands.AbstractHandler.setBaseEnabled(AbstractHandler.java:111)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.isEnabled(HandlerServiceHandler.java:70)
-	at org.eclipse.core.commands.Command.isEnabled(Command.java:832)
-	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:933)
-	at org.eclipse.ui.menus.CommandContributionItem.updateMenuItem(CommandContributionItem.java:536)
-	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:486)
-	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:857)
-	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:857)
-	at org.eclipse.ui.internal.Workbench.updateActiveWorkbenchWindowMenuManager(Workbench.java:3246)
-	at org.eclipse.ui.internal.Workbench.lambda$0(Workbench.java:3228)
-	at org.eclipse.jface.bindings.BindingManager.fireBindingManagerChanged(BindingManager.java:896)
-	at org.eclipse.jface.bindings.BindingManager.setActiveBindings(BindingManager.java:2178)
-	at org.eclipse.jface.bindings.BindingManager.recomputeBindings(BindingManager.java:1737)
-	at org.eclipse.jface.bindings.BindingManager.contextManagerChanged(BindingManager.java:693)
-	at org.eclipse.core.commands.contexts.ContextManager.fireContextManagerChanged(ContextManager.java:164)
-	at org.eclipse.core.commands.contexts.ContextManager.setEventCaching(ContextManager.java:323)
-	at org.eclipse.core.commands.contexts.ContextManager.deferUpdates(ContextManager.java:85)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:787)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:686)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:681)
-	at org.eclipse.ui.internal.WorkbenchPage.activate(WorkbenchPage.java:954)
-	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3190)
-	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3118)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3116)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3086)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3077)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:390)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInSpecificEditor(EditorUtility.java:191)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:169)
-	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
-	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
-	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
-	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
-	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:366)
-	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$3.open(PackageExplorerPart.java:545)
-	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
-	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:799)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
-	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:796)
-	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1110)
-	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:295)
-	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:330)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4202)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3790)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	... 94 more
-
-!ENTRY org.eclipse.lsp4e 4 0 2024-12-12 13:14:21.000
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.matches(LSPDocumentAbstractHandler.java:69)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.lambda$0(LSPDocumentAbstractHandler.java:59)
-	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
-	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(AbstractList.java:708)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.anyMatching(LSPDocumentAbstractHandler.java:59)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:123)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:113)
-	at org.eclipse.lsp4e.operations.rename.LSPRenameHandler.setEnabled(LSPRenameHandler.java:71)
-	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:223)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.canExecute(E4HandlerProxy.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.isEnabled(HandlerServiceHandler.java:68)
-	at org.eclipse.core.commands.Command.isEnabled(Command.java:832)
-	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:933)
-	at org.eclipse.ui.menus.CommandContributionItem.updateMenuItem(CommandContributionItem.java:536)
-	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:486)
-	at org.eclipse.ui.menus.CommandContributionItem.lambda$2(CommandContributionItem.java:325)
-	at org.eclipse.ui.menus.CommandContributionItem.updateCommandProperties(CommandContributionItem.java:329)
-	at org.eclipse.ui.menus.CommandContributionItem.lambda$1(CommandContributionItem.java:296)
-	at org.eclipse.core.commands.Command$1.run(Command.java:529)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.commands.Command.fireCommandChanged(Command.java:522)
-	at org.eclipse.core.commands.Command.lambda$0(Command.java:1000)
-	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.fireHandlerChanged(HandlerServiceHandler.java:189)
-	at org.eclipse.core.commands.AbstractHandler.setBaseEnabled(AbstractHandler.java:111)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.isEnabled(HandlerServiceHandler.java:70)
-	at org.eclipse.core.commands.Command.isEnabled(Command.java:832)
-	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:933)
-	at org.eclipse.ui.menus.CommandContributionItem.updateMenuItem(CommandContributionItem.java:536)
-	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:486)
-	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:857)
-	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:857)
-	at org.eclipse.ui.internal.Workbench.updateActiveWorkbenchWindowMenuManager(Workbench.java:3246)
-	at org.eclipse.ui.internal.Workbench.lambda$0(Workbench.java:3228)
-	at org.eclipse.jface.bindings.BindingManager.fireBindingManagerChanged(BindingManager.java:896)
-	at org.eclipse.jface.bindings.BindingManager.setActiveBindings(BindingManager.java:2178)
-	at org.eclipse.jface.bindings.BindingManager.recomputeBindings(BindingManager.java:1737)
-	at org.eclipse.jface.bindings.BindingManager.contextManagerChanged(BindingManager.java:693)
-	at org.eclipse.core.commands.contexts.ContextManager.fireContextManagerChanged(ContextManager.java:164)
-	at org.eclipse.core.commands.contexts.ContextManager.setEventCaching(ContextManager.java:323)
-	at org.eclipse.core.commands.contexts.ContextManager.deferUpdates(ContextManager.java:85)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:787)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:686)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:681)
-	at org.eclipse.ui.internal.WorkbenchPage.activate(WorkbenchPage.java:954)
-	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3190)
-	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3118)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3116)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3086)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3077)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:390)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInSpecificEditor(EditorUtility.java:191)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:169)
-	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
-	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
-	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
-	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
-	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:366)
-	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$3.open(PackageExplorerPart.java:545)
-	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
-	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:799)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
-	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:796)
-	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1110)
-	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:295)
-	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:330)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4202)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3790)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	... 94 more
-
-!ENTRY org.eclipse.lsp4e 4 0 2024-12-12 13:14:21.003
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.matches(LSPDocumentAbstractHandler.java:69)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.lambda$0(LSPDocumentAbstractHandler.java:59)
-	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
-	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(AbstractList.java:708)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.anyMatching(LSPDocumentAbstractHandler.java:59)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:123)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:113)
-	at org.eclipse.lsp4e.operations.rename.LSPRenameHandler.setEnabled(LSPRenameHandler.java:71)
-	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:223)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:134)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:91)
-	at org.eclipse.core.commands.Command.setEnabled(Command.java:856)
-	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:932)
-	at org.eclipse.ui.menus.CommandContributionItem.updateMenuItem(CommandContributionItem.java:536)
-	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:486)
-	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:479)
-	at org.eclipse.ui.menus.CommandContributionItem.lambda$0(CommandContributionItem.java:951)
-	at org.eclipse.jface.bindings.BindingManager.fireBindingManagerChanged(BindingManager.java:896)
-	at org.eclipse.jface.bindings.BindingManager.setActiveBindings(BindingManager.java:2178)
-	at org.eclipse.jface.bindings.BindingManager.recomputeBindings(BindingManager.java:1737)
-	at org.eclipse.jface.bindings.BindingManager.contextManagerChanged(BindingManager.java:693)
-	at org.eclipse.core.commands.contexts.ContextManager.fireContextManagerChanged(ContextManager.java:164)
-	at org.eclipse.core.commands.contexts.ContextManager.setEventCaching(ContextManager.java:323)
-	at org.eclipse.core.commands.contexts.ContextManager.deferUpdates(ContextManager.java:85)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:787)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:686)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:681)
-	at org.eclipse.ui.internal.WorkbenchPage.activate(WorkbenchPage.java:954)
-	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3190)
-	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3118)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3116)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3086)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3077)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:390)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInSpecificEditor(EditorUtility.java:191)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:169)
-	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
-	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
-	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
-	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
-	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:366)
-	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$3.open(PackageExplorerPart.java:545)
-	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
-	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:799)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
-	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:796)
-	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1110)
-	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:295)
-	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:330)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4202)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3790)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	... 77 more
-
-!ENTRY org.eclipse.lsp4e 4 0 2024-12-12 13:14:21.003
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.matches(LSPDocumentAbstractHandler.java:69)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.lambda$0(LSPDocumentAbstractHandler.java:59)
-	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
-	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(AbstractList.java:708)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.anyMatching(LSPDocumentAbstractHandler.java:59)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:123)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:113)
-	at org.eclipse.lsp4e.operations.rename.LSPRenameHandler.setEnabled(LSPRenameHandler.java:71)
-	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:223)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.canExecute(E4HandlerProxy.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.isEnabled(HandlerServiceHandler.java:68)
-	at org.eclipse.core.commands.Command.isEnabled(Command.java:832)
-	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:933)
-	at org.eclipse.ui.menus.CommandContributionItem.updateMenuItem(CommandContributionItem.java:536)
-	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:486)
-	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:479)
-	at org.eclipse.ui.menus.CommandContributionItem.lambda$0(CommandContributionItem.java:951)
-	at org.eclipse.jface.bindings.BindingManager.fireBindingManagerChanged(BindingManager.java:896)
-	at org.eclipse.jface.bindings.BindingManager.setActiveBindings(BindingManager.java:2178)
-	at org.eclipse.jface.bindings.BindingManager.recomputeBindings(BindingManager.java:1737)
-	at org.eclipse.jface.bindings.BindingManager.contextManagerChanged(BindingManager.java:693)
-	at org.eclipse.core.commands.contexts.ContextManager.fireContextManagerChanged(ContextManager.java:164)
-	at org.eclipse.core.commands.contexts.ContextManager.setEventCaching(ContextManager.java:323)
-	at org.eclipse.core.commands.contexts.ContextManager.deferUpdates(ContextManager.java:85)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:787)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:686)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:681)
-	at org.eclipse.ui.internal.WorkbenchPage.activate(WorkbenchPage.java:954)
-	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3190)
-	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3118)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3116)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3086)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3077)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:390)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInSpecificEditor(EditorUtility.java:191)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:169)
-	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
-	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
-	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
-	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
-	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:366)
-	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$3.open(PackageExplorerPart.java:545)
-	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
-	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:799)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
-	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:796)
-	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1110)
-	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:295)
-	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:330)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4202)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3790)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	... 77 more
-
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:31.848
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:687)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:421)
-	at org.eclipse.lsp4e.LanguageServers.collectAll(LanguageServers.java:91)
-	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:40)
-	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:66)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:191)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:197)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:142)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:131)
-	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
-	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
-	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1685)
-	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	... 38 more
-
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:31.849
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:687)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:421)
-	at org.eclipse.lsp4e.LanguageServers.collectAll(LanguageServers.java:91)
-	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:62)
-	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:89)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:191)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:197)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:142)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:131)
-	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
-	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
-	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1685)
-	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	... 38 more
-
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:31.850
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 15:59:57.915
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -657,7 +59,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:33.839
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 15:59:58.524
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -707,7 +109,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:33.841
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 15:59:58.526
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -757,7 +159,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:33.841
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 15:59:58.527
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -807,7 +209,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:37.288
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 15:59:59.325
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -857,7 +259,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:37.289
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 15:59:59.326
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -907,7 +309,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:37.290
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 15:59:59.327
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -957,7 +359,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:37.785
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:00.404
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1007,7 +409,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:37.786
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:00.406
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1057,7 +459,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:37.787
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:00.407
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1107,7 +509,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:38.934
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:03.469
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1157,7 +559,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:38.936
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:03.470
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1207,7 +609,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:38.936
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:03.472
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1257,7 +659,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:40.192
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:03.725
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1307,7 +709,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:40.193
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:03.727
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1357,7 +759,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:40.194
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:03.728
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1407,7 +809,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:43.639
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:06.892
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1457,7 +859,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:43.640
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:06.894
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1507,7 +909,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:43.641
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:06.895
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1557,7 +959,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:45.542
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:09.307
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1607,7 +1009,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:45.543
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:09.309
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1657,7 +1059,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:45.544
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:09.310
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1707,7 +1109,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:48.552
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:10.508
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1757,7 +1159,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:48.553
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:10.510
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1807,7 +1209,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:48.554
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:10.511
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1857,7 +1259,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:50.111
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:11.564
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1907,7 +1309,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:50.113
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:11.566
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -1957,7 +1359,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:50.113
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:11.567
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -2007,7 +1409,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:52.992
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:14.599
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -2057,7 +1459,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:52.993
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:14.601
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -2107,7 +1509,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:52.994
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:14.602
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -2157,7 +1559,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:54.391
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:16.868
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -2207,7 +1609,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:54.392
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:16.869
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -2257,7 +1659,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:54.393
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:16.871
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -2307,741 +1709,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:57.728
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:687)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:421)
-	at org.eclipse.lsp4e.LanguageServers.collectAll(LanguageServers.java:91)
-	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:40)
-	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:66)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:191)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:197)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:142)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:131)
-	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
-	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
-	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1685)
-	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	... 38 more
-
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:57.729
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:687)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:421)
-	at org.eclipse.lsp4e.LanguageServers.collectAll(LanguageServers.java:91)
-	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:62)
-	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:89)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:191)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:197)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:142)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:131)
-	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
-	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
-	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1685)
-	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	... 38 more
-
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:57.730
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:687)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:421)
-	at org.eclipse.lsp4e.LanguageServers.collectAll(LanguageServers.java:91)
-	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:52)
-	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:80)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:191)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:197)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:142)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:131)
-	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
-	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
-	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1685)
-	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	... 38 more
-
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:59.144
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:687)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:421)
-	at org.eclipse.lsp4e.LanguageServers.collectAll(LanguageServers.java:91)
-	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:40)
-	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:66)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:191)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:197)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:142)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:131)
-	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
-	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
-	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1685)
-	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	... 38 more
-
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:59.145
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:687)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:421)
-	at org.eclipse.lsp4e.LanguageServers.collectAll(LanguageServers.java:91)
-	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:62)
-	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:89)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:191)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:197)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:142)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:131)
-	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
-	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
-	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1685)
-	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	... 38 more
-
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:14:59.146
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:687)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:421)
-	at org.eclipse.lsp4e.LanguageServers.collectAll(LanguageServers.java:91)
-	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:52)
-	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:80)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:191)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:197)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:142)
-	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:131)
-	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
-	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
-	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1685)
-	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
-	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	... 38 more
-
-!ENTRY org.eclipse.lsp4e 4 0 2024-12-12 13:19:54.499
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.matches(LSPDocumentAbstractHandler.java:69)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.lambda$0(LSPDocumentAbstractHandler.java:59)
-	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
-	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(AbstractList.java:708)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.anyMatching(LSPDocumentAbstractHandler.java:59)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:123)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:113)
-	at org.eclipse.lsp4e.operations.rename.LSPRenameHandler.setEnabled(LSPRenameHandler.java:71)
-	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:223)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:134)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:91)
-	at org.eclipse.core.commands.Command.setEnabled(Command.java:856)
-	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:932)
-	at org.eclipse.ui.menus.CommandContributionItem.updateMenuItem(CommandContributionItem.java:536)
-	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:486)
-	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:479)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:211)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:248)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:114)
-	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:89)
-	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:468)
-	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:494)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:272)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1197)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1178)
-	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5144)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4761)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1482)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2361)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5177)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:512)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4833)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1482)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2361)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5177)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:512)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4833)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1482)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2361)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5177)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3788)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	... 71 more
-
-!ENTRY org.eclipse.lsp4e 4 0 2024-12-12 13:19:54.500
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.matches(LSPDocumentAbstractHandler.java:69)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.lambda$0(LSPDocumentAbstractHandler.java:59)
-	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
-	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(AbstractList.java:708)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.anyMatching(LSPDocumentAbstractHandler.java:59)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:123)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:113)
-	at org.eclipse.lsp4e.operations.rename.LSPRenameHandler.setEnabled(LSPRenameHandler.java:71)
-	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:223)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.canExecute(E4HandlerProxy.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.isEnabled(HandlerServiceHandler.java:68)
-	at org.eclipse.core.commands.Command.isEnabled(Command.java:832)
-	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:933)
-	at org.eclipse.ui.menus.CommandContributionItem.updateMenuItem(CommandContributionItem.java:536)
-	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:486)
-	at org.eclipse.ui.menus.CommandContributionItem.update(CommandContributionItem.java:479)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:211)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:248)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:114)
-	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:89)
-	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:468)
-	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:494)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:272)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1197)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1178)
-	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5144)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4761)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1482)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2361)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5177)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:512)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4833)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1482)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2361)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5177)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:512)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4833)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1482)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2361)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5177)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3788)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	... 71 more
-
-!ENTRY org.eclipse.lsp4e 4 0 2024-12-12 13:19:54.501
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.matches(LSPDocumentAbstractHandler.java:69)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.lambda$0(LSPDocumentAbstractHandler.java:59)
-	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
-	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(AbstractList.java:708)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.anyMatching(LSPDocumentAbstractHandler.java:59)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:123)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:113)
-	at org.eclipse.lsp4e.operations.rename.LSPRenameHandler.setEnabled(LSPRenameHandler.java:71)
-	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:223)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:134)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:91)
-	at org.eclipse.core.commands.Command.setEnabled(Command.java:856)
-	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:932)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:213)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:248)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:114)
-	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:89)
-	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:468)
-	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:494)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:272)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1197)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1178)
-	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5144)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4761)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1482)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2361)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5177)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:512)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4833)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1482)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2361)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5177)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:512)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4833)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1482)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2361)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5177)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3788)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	... 68 more
-
-!ENTRY org.eclipse.lsp4e 4 0 2024-12-12 13:19:54.502
-!MESSAGE java.lang.IllegalStateException: Unexpected null value present!
-!STACK 0
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Unexpected null value present!
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.matches(LSPDocumentAbstractHandler.java:69)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.lambda$0(LSPDocumentAbstractHandler.java:59)
-	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
-	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(AbstractList.java:708)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
-	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler$LanguageServerDocumentHandlerExecutor.anyMatching(LSPDocumentAbstractHandler.java:59)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:123)
-	at org.eclipse.lsp4e.internal.LSPDocumentAbstractHandler.setEnabled(LSPDocumentAbstractHandler.java:113)
-	at org.eclipse.lsp4e.operations.rename.LSPRenameHandler.setEnabled(LSPRenameHandler.java:71)
-	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:223)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.canExecute(E4HandlerProxy.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.isEnabled(HandlerServiceHandler.java:68)
-	at org.eclipse.core.commands.Command.isEnabled(Command.java:832)
-	at org.eclipse.ui.menus.CommandContributionItem.isEnabled(CommandContributionItem.java:933)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:213)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:248)
-	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:114)
-	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:89)
-	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:468)
-	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:494)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:272)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4404)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1173)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1197)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1178)
-	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5144)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4761)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1482)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2361)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5177)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:512)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4833)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1482)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2361)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5177)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:512)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4833)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1482)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2361)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5177)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3788)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:663)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
-Caused by: java.lang.IllegalStateException: Unexpected null value present!
-	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$19(LanguageServerWrapper.java:940)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
-	at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
-	at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
-	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilitiesAsync(LanguageServerWrapper.java:940)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.filter(LanguageServers.java:281)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
-	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.getServers(LanguageServers.java:289)
-	... 68 more
-
-!ENTRY org.eclipse.jdt.core 4 4 2024-12-12 13:19:57.706
+!ENTRY org.eclipse.jdt.core 4 4 2024-12-12 16:00:17.975
 !MESSAGE Failed to save JDT index: Index for /shop
 !STACK 0
 java.io.FileNotFoundException: C:\Users\SahlouneB\Spring Workspace\.metadata\.plugins\org.eclipse.jdt.core\3069134441.index (Le fichier spécifié est introuvable)
@@ -3058,7 +1726,7 @@ java.io.FileNotFoundException: C:\Users\SahlouneB\Spring Workspace\.metadata\.pl
 	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:508)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:19:58.372
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:18.746
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -3108,7 +1776,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:19:58.373
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:18.748
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!
@@ -3158,7 +1826,7 @@ Caused by: java.lang.IllegalStateException: Unexpected null value present!
 	at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:684)
 	... 38 more
 
-!ENTRY org.eclipse.jface.text 4 0 2024-12-12 13:19:58.374
+!ENTRY org.eclipse.jface.text 4 0 2024-12-12 16:00:18.749
 !MESSAGE java.lang.IllegalStateException: Unexpected null value present!
 !STACK 0
 java.util.concurrent.CompletionException: java.lang.IllegalStateException: Unexpected null value present!

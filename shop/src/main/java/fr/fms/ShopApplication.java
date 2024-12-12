@@ -4,6 +4,7 @@ import fr.fms.dao.*;
 import fr.fms.entities.Article;
 import fr.fms.entities.Category;
 
+import java.awt.print.Pageable;
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
@@ -12,6 +13,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 
 @SpringBootApplication
 public class ShopApplication implements CommandLineRunner{
@@ -130,11 +133,25 @@ public class ShopApplication implements CommandLineRunner{
 			case 1:
 				System.out.println("*********************************************");
 				System.out.println("Afficher tous les articles");
+				System.out.println(" IDENTIFIANT   BRAND   DESCRIPTION  PRICE CATEGORY");
 				for(Article articleAll: articleRepository.findAll()) {
-								System.out.println(articleAll);
+					System.out.println(articleAll);
 					};
 				System.out.println("*********************************************");
 				break;
+			case 2:
+//				int pageNumber =0;
+//				int PageSize = 5;
+//				PageRequest pageable = PageRequest.of(pageNumber, PageSize);
+//				Page<Article> page = articleRepository.findAll(pageable);
+//				for(Article articlePaginee : page.getContent()) {
+//					System.out.println("Id:"+articlePaginee.getId()+ "Brand: " + articlePaginee.getBrand()+ 
+//							"Description: "+articlePaginee.getDescription()+ " Price: "+ articlePaginee.getPrice());
+//				}
+				
+				System.out.println("*********************************************");
+				System.out.println("Afficher tous les articles");
+				
 				
 			case 3:
 				System.out.println("Ajouter un article");
@@ -157,7 +174,9 @@ public class ShopApplication implements CommandLineRunner{
 				Long idValue = sc.nextLong();
 				Optional<Article> article = articleRepository.findById(idValue);
 				if(article.isPresent()) {
-					System.out.println(article);
+					Article ar = article.get();
+					//change methode toString to dispaly allArticle
+					System.out.println(ar);
 				}else {
 					System.out.println("Id Article Inconnu");
 				}
